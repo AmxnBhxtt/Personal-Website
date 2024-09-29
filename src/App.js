@@ -24,7 +24,7 @@ const App = () => {
     <div className="container">
       {/* Left side */}
       <div className="left">
-        <h1 className="page-title">AMXNBHXTT</h1> {/* Added title here */}
+        <h1 className="page-title">AMXNBHXTT</h1> {/* Adde title here */}
         
         <div className="about-section">
           <h3>
