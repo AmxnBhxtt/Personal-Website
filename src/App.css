@@ -24,7 +24,7 @@ a:hover {
 .page-title {
   font-size: 1.75rem;
   color: rgb(255, 94, 0);
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 50%;
 }
@@ -40,7 +40,7 @@ a:hover {
 .about-section,
 .featured-work,
 .projects {
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 p {
@@ -93,59 +93,45 @@ hr {
   box-sizing: border-box;
 }
 
-/* Mobile layout: move right section on top and scroll together */
+/* Mobile layout: move right section on top */
 @media (max-width: 768px) {
   .container {
-    flex-direction: column;
-    height: auto; /* Allow the container to expand with content */
+    flex-direction: column; /* Stack the sections vertically */
   }
 
   .right {
-    order: 1;
-    flex: none;
-    height: auto; /* Allow the image section to take its natural height */
+    order: 1; /* Move the right side (images) to the top */
+    flex: none; /* Reset flex */
+    height: 50vh; /* Adjust the height for mobile view */
   }
 
   .left {
-    order: 2;
-    flex: none;
+    order: 2; /* Move the left side (content) to the bottom */
+    flex: none; /* Reset flex */
     height: auto; /* Let the content take its natural height */
   }
 
   .image-container {
-    height: auto; /* Allow the image container to grow with content */
+    height: 50vh; /* Fixed height for image container */
+    overflow: hidden; /* Ensure no content leakage */
   }
 
   .background-image {
-    height: auto;
-    object-fit: contain; /* Ensure the image is fully visible and doesn't crop */
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure images cover the container fully */
   }
 
   .text-overlay {
-    font-size: 1rem;
-    padding: 10px;
-    width: 90%;
-    left: 5%;
-    right: 5%;
-    box-sizing: border-box;
-  }
-
-  .page-title {
-    font-size: 1.5rem;
-  }
-
-  h2 {
-    font-size: 2rem;
-  }
-
-  h3 {
-    font-size: 1.2rem;
-  }
-
-  p {
-    font-size: 0.9rem;
+    font-size: 1rem; /* Adjust font size for smaller screens */
+    padding: 10px; /* Reduce padding for mobile view */
+    width: 90%; /* Make sure it fits within the screen */
+    left: 5%; /* Center horizontally by giving space on the left */
+    right: 5%; /* Add space on the right as well */
+    box-sizing: border-box; /* Include padding in width */
   }
 }
+
 
 /* Mid-size screens: Tablets, iPads, and MacBooks */
 @media (min-width: 768px) and (max-width: 1024px) {

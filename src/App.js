@@ -15,7 +15,7 @@ const App = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 3000); // 3000 ms = 3 seconds
+    }, 1500); // 3000 ms = 3 seconds
 
     return () => clearInterval(interval);
   }, []);
@@ -40,19 +40,19 @@ const App = () => {
         
         <div className="projects">
           <h3><a href="Aman Bhatt Resume.pdf" target="_blank" rel="noopener noreferrer">TECHNOLOGY INTERN ↗️</a></h3>
-          <p>Did a lot of work</p>
+          <p>Kashiv BioSciences LLC.</p>
           <hr />
           <h3><a href="Aman Bhatt Resume.pdf" target="_blank" rel="noopener noreferrer">BACKEND SYSTEMS ENGINEERING INTERN ↗️</a></h3>
-          <p>Did a lot of work</p>
+          <p>IAMI Authentication LLC.</p>
           <hr />
           <h3><a href="project1.pdf" target="_blank" rel="noopener noreferrer">BIKE SHARING DATA ANALYSIS MODEL AND THESIS ↗️</a></h3>
-          <p>SAS, Python, Oracle Database System, Big Data</p>
+          <p>Data Analysis · Data Modeling · Statistical Data Analysis · SAS · Oracle Database System · Big Data</p>
           <hr />
           <h3><a href="https://github.com/AmxnBhxtt/Live-Language-Translation-Device" target="_blank" rel="noopener noreferrer">REAL-TIME LANGUAGE TRANSLATION DEVICE ↗️</a></h3>
-          <p>Python, Raspberry Pi, Google API, NLP (Natural Language Processing)</p>
+          <p>Hardware Architecture · Python · Raspberry Pi · Google API · NLP (Natural Language Processing)</p>
           <hr />
-          <h3><a href="project2.pdf" target="_blank" rel="noopener noreferrer">HARMONY IOS APP ↗️</a></h3>
-          <p>Swift, SwiftUI, XCODE, Git, GitHub</p>
+          <h3><a href="https://github.com/AmxnBhxtt/IOS-Harmony-App" target="_blank" rel="noopener noreferrer">HARMONY IOS APP ↗️</a></h3>
+          <p>Software Architecture · Software Development Life Cycle · Swift · SwiftUI ·Git · GitHub</p>
         </div>
 
         <div className="featured-work">
@@ -62,6 +62,9 @@ const App = () => {
         <div className="projects">
           <h3><a href="Aman Bhatt Resume.pdf" target="_blank" rel="noopener noreferrer">RESUME ↗️</a></h3>
           <p>Yes, it will pass though an ATS System!</p>
+          <hr />
+          <h3><a href="https://github.com/AmxnBhxtt" target="_blank" rel="noopener noreferrer">GITHUB ↗️</a></h3>
+          <p>Checkout more projects!</p>
           <hr />
           <h3><a href="https://www.linkedin.com/in/amxnbhxtt/" target="_blank" rel="noopener noreferrer">LINKEDIN ↗️</a></h3>
           <p>Yes, I do follow random people and call it "connections"</p>
