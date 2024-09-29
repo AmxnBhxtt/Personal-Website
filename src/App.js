@@ -39,10 +39,10 @@ const App = () => {
         </div>
         
         <div className="projects">
-          <h3><a href="Aman Bhatt Resume.pdf" target="_blank" rel="noopener noreferrer">TECHNOLOGY INTERN ↗️</a></h3>
+          <h3><a href="'/Aman Bhatt Resume.pdf" target="_blank" rel="noopener noreferrer">TECHNOLOGY INTERN ↗️</a></h3>
           <p>Kashiv BioSciences LLC.</p>
           <hr />
-          <h3><a href="Aman Bhatt Resume.pdf" target="_blank" rel="noopener noreferrer">BACKEND SYSTEMS ENGINEERING INTERN ↗️</a></h3>
+          <h3><a href="/Aman Bhatt Resume.pdf" target="_blank" rel="noopener noreferrer">BACKEND SYSTEMS ENGINEERING INTERN ↗️</a></h3>
           <p>IAMI Authentication LLC.</p>
           <hr />
           <h3><a href="project1.pdf" target="_blank" rel="noopener noreferrer">BIKE SHARING DATA ANALYSIS MODEL AND THESIS ↗️</a></h3>
@@ -60,7 +60,7 @@ const App = () => {
         </div>
         
         <div className="projects">
-          <h3><a href="Aman Bhatt Resume.pdf" target="_blank" rel="noopener noreferrer">RESUME ↗️</a></h3>
+          <h3><a href="/Aman Bhatt Resume.pdf" target="_blank" rel="noopener noreferrer">RESUME ↗️</a></h3>
           <p>Yes, it will pass though an ATS System!</p>
           <hr />
           <h3><a href="https://github.com/AmxnBhxtt" target="_blank" rel="noopener noreferrer">GITHUB ↗️</a></h3>
