@@ -78,3 +78,51 @@ hr {
     padding: 50px; /* Padding around the text */
     font-family: Arial, Helvetica, sans-serif;
   }
+
+/* Mobile layout: move right section on top */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column; /* Stack the sections vertically */
+  }
+
+  .right {
+    order: 1; /* Move the right side (images) to the top */
+    flex: none; /* Reset flex */
+    height: 50vh; /* Adjust the height for mobile view */
+  }
+
+  .left {
+    order: 2; /* Move the left side (content) to the bottom */
+    flex: none; /* Reset flex */
+    height: auto; /* Let the content take its natural height */
+  }
+
+  .text-overlay {
+    font-size: 1rem; /* Adjust font size for smaller screens */
+    padding: 10px; /* Reduce padding for mobile view */
+    width: 90%; /* Make sure it fits within the screen */
+    left: 5%; /* Center horizontally by giving space on the left */
+    right: 5%; /* Add space on the right as well */
+    box-sizing: border-box; /* Include padding in width */
+  }
+
+  .background-image {
+    height: 100%;
+  }
+
+  .page-title {
+    font-size: 1.5rem; /* Adjust title size for mobile */
+  }
+
+  h2 {
+    font-size: 2rem; /* Smaller headings on mobile */
+  }
+
+  h3 {
+    font-size: 1.2rem; /* Adjust heading size */
+  }
+
+  p {
+    font-size: 0.9rem; /* Adjust paragraph size */
+  }
+}
