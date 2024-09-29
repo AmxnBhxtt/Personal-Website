@@ -1,0 +1,80 @@
+
+
+.container {
+  display: flex;
+  height: 100vh; /* Full height of the viewport */
+}
+
+.page-title {
+  font-size: 1.75rem; /* Adjust font size as needed */
+  color: rgb(255, 94, 0); /* Change color if needed */
+  margin-bottom: 20px; /* Space below the title */
+  font-family: Arial, Helvetica, sans-serif; /* Ensure consistent font */
+  font-weight: 50%;
+}
+
+
+.left {
+  flex: 5;
+  padding: 20px; /* Add padding for better spacing */
+  background-color: #000000; /* Background color for visibility */
+  color: aliceblue;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.about-section,
+.featured-work,
+.projects {
+
+  margin-bottom: 20px; /* Space between sections */
+}
+p{
+  font-size: 13px;
+  font-weight: 50;
+}
+h2 {
+  font-size: 3rem; /* Adjust heading size as needed */
+  color: rgb(255, 255, 255);
+}
+
+h3 {
+  font-size: 1.45rem; /* Smaller heading size */
+
+}
+
+hr {
+  border: 2.5px solid rgb(128, 128, 128); /* Line style */
+  margin:15px 50px 10px 0px; /* Space around lines */
+}
+
+.right {
+  flex: 5;
+  position: relative;
+}
+
+.image-container {
+  position: relative;
+  width: 100%;
+  height: 99.73%;
+}
+
+.background-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 95%;
+  filter: blur(px); /* Add blur effect to the images */
+  border: 3px solid rgb(0, 0, 0);
+  
+}
+
+  .text-overlay {
+    position: absolute;
+    top: 20px; /* Distance from the top */
+    left: 20px; /* Distance from the left */
+    color: rgb(255, 94, 0); /* Orange text */
+    font-size: 3.3rem; /* Adjust font size as needed */
+    text-align: left; /* Left-aligned text */
+    padding: 50px; /* Padding around the text */
+    font-family: Arial, Helvetica, sans-serif;
+  }
