@@ -39,19 +39,19 @@ const App = () => {
         </div>
         
         <div className="projects">
-          <h3>TECHNOLOGY INTERN ↗️</h3>
+          <h3><a href="Aman Bhatt Resume.pdf" target="_blank" rel="noopener noreferrer">TECHNOLOGY INTERN ↗️</a></h3>
           <p>Did a lot of work</p>
           <hr />
-          <h3>BACKEND SYSTEMS ENGINEERING INTERN ↗️</h3>
+          <h3><a href="Aman Bhatt Resume.pdf" target="_blank" rel="noopener noreferrer">BACKEND SYSTEMS ENGINEERING INTERN ↗️</a></h3>
           <p>Did a lot of work</p>
           <hr />
-          <h3>BIKE SHARING DATA ANALYSIS MODEL AND THESIS ↗️</h3>
+          <h3><a href="project1.pdf" target="_blank" rel="noopener noreferrer">BIKE SHARING DATA ANALYSIS MODEL AND THESIS ↗️</a></h3>
           <p>SAS, Python, Oracle Database System, Big Data</p>
           <hr />
-          <h3>REAL-TIME LANGUAGE TRANSLATION DEVICE ↗️</h3>
+          <h3><a href="https://github.com/AmxnBhxtt/Live-Language-Translation-Device" target="_blank" rel="noopener noreferrer">REAL-TIME LANGUAGE TRANSLATION DEVICE ↗️</a></h3>
           <p>Python, Raspberry Pi, Google API, NLP (Natural Language Processing)</p>
           <hr />
-          <h3>HARMONY IOS APP ↗️</h3>
+          <h3><a href="project2.pdf" target="_blank" rel="noopener noreferrer">HARMONY IOS APP ↗️</a></h3>
           <p>Swift, SwiftUI, XCODE, Git, GitHub</p>
         </div>
 
@@ -60,10 +60,10 @@ const App = () => {
         </div>
         
         <div className="projects">
-          <h3>RESUME ↗️</h3>
+          <h3><a href="Aman Bhatt Resume.pdf" target="_blank" rel="noopener noreferrer">RESUME ↗️</a></h3>
           <p>Yes, it will pass though an ATS System!</p>
           <hr />
-          <h3>LINKEDIN ↗️</h3>
+          <h3><a href="https://www.linkedin.com/in/amxnbhxtt/" target="_blank" rel="noopener noreferrer">LINKEDIN ↗️</a></h3>
           <p>Yes, I do follow random people and call it "connections"</p>
           <hr />
           <h3>BLOG ↗️</h3>
