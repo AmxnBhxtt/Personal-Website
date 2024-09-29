@@ -126,3 +126,112 @@ hr {
     font-size: 0.9rem; /* Adjust paragraph size */
   }
 }
+
+/* Default desktop styles will apply above 1024px */
+
+/* Mid-size screens: Tablets, iPads, and MacBooks */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .container {
+    flex-direction: column; /* Stack the sections vertically */
+  }
+
+  .right {
+    order: 1; /* Move the right side (images) to the top */
+    flex: none; /* Reset flex */
+    height: 50vh; /* Adjust the height */
+  }
+
+  .left {
+    order: 2; /* Move the left side (content) to the bottom */
+    flex: none; /* Reset flex */
+    height: auto; /* Let the content take its natural height */
+    padding: 15px; /* Adjust padding for mid-size screens */
+  }
+
+  .text-overlay {
+    font-size: 2.5rem; /* Adjust font size for mid-size screens */
+    padding: 15px; /* Reduce padding to prevent text overflow */
+    width: 90%; /* Ensure it fits within the screen */
+    left: 5%; /* Center horizontally */
+    right: 5%; /* Space on the right */
+    box-sizing: border-box; /* Include padding in width */
+  }
+
+  .background-image {
+    height: 100%;
+    object-fit: cover; /* Ensure the image covers the container */
+  }
+
+  .page-title {
+    font-size: 1.75rem; /* Adjust title size for mid-screens */
+  }
+
+  h2 {
+    font-size: 2.5rem; /* Adjust heading size */
+  }
+
+  h3 {
+    font-size: 1.3rem; /* Adjust heading size */
+  }
+
+  p {
+    font-size: 1rem; /* Adjust paragraph size */
+  }
+
+  hr {
+    margin: 15px 0; /* Adjust margins for better spacing */
+  }
+}
+
+/* Mobile layout: Phones and smaller screens below 768px */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column; /* Stack the sections vertically */
+  }
+
+  .right {
+    order: 1; /* Move the right side (images) to the top */
+    flex: none; /* Reset flex */
+    height: 50vh; /* Adjust the height */
+  }
+
+  .left {
+    order: 2; /* Move the left side (content) to the bottom */
+    flex: none; /* Reset flex */
+    height: auto; /* Let the content take its natural height */
+    padding: 10px; /* Adjust padding for smaller screens */
+  }
+
+  .text-overlay {
+    font-size: 2rem; /* Adjust font size for smaller screens */
+    padding: 10px; /* Reduce padding for mobile view */
+    width: 90%; /* Ensure it fits within the screen */
+    left: 5%; /* Center horizontally */
+    right: 5%; /* Space on the right */
+    box-sizing: border-box; /* Include padding in width */
+  }
+
+  .background-image {
+    height: 100%;
+  }
+
+  .page-title {
+    font-size: 1.5rem; /* Adjust title size for mobile */
+  }
+
+  h2 {
+    font-size: 2rem; /* Smaller headings on mobile */
+  }
+
+  h3 {
+    font-size: 1.2rem; /* Adjust heading size */
+  }
+
+  p {
+    font-size: 0.9rem; /* Adjust paragraph size */
+  }
+
+  hr {
+    margin: 10px 0; /* Adjust margin */
+  }
+}
