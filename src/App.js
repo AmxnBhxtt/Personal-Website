@@ -28,7 +28,7 @@ const App = () => {
         
         <div className="about-section">
           <h3>
-            🤖 I’m a curious mind who enjoys crafting code and developing
+            🤖 A curious mind who enjoys crafting code and developing
             practical solutions. Navigating the evolving landscape of
             technology, I transform caffeine into elegant code. ☕
           </h3>

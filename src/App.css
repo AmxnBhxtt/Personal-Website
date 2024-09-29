@@ -1,23 +1,27 @@
-
+body {
+  background-color: #000000;
+  margin: 0;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
 
 .container {
   display: flex;
   height: 100vh; /* Full height of the viewport */
+  width: 100vw; /* Full width of the viewport */
 }
 
 .page-title {
-  font-size: 1.75rem; /* Adjust font size as needed */
-  color: rgb(255, 94, 0); /* Change color if needed */
-  margin-bottom: 20px; /* Space below the title */
-  font-family: Arial, Helvetica, sans-serif; /* Ensure consistent font */
+  font-size: 1.75rem;
+  color: rgb(255, 94, 0);
+  margin-bottom: 20px;
+  font-family: Arial, Helvetica, sans-serif;
   font-weight: 50%;
 }
 
-
 .left {
   flex: 5;
-  padding: 20px; /* Add padding for better spacing */
-  background-color: #000000; /* Background color for visibility */
+  padding: 20px;
+  background-color: #000000;
   color: aliceblue;
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -25,26 +29,26 @@
 .about-section,
 .featured-work,
 .projects {
-
-  margin-bottom: 20px; /* Space between sections */
+  margin-bottom: 20px;
 }
-p{
+
+p {
   font-size: 13px;
   font-weight: 50;
 }
+
 h2 {
-  font-size: 3rem; /* Adjust heading size as needed */
+  font-size: 3rem;
   color: rgb(255, 255, 255);
 }
 
 h3 {
-  font-size: 1.45rem; /* Smaller heading size */
-
+  font-size: 1.45rem;
 }
 
 hr {
-  border: 2.5px solid rgb(128, 128, 128); /* Line style */
-  margin:15px 50px 10px 0px; /* Space around lines */
+  border: 2.5px solid rgb(128, 128, 128);
+  margin: 15px 50px 10px 0px;
 }
 
 .right {
@@ -55,7 +59,7 @@ hr {
 .image-container {
   position: relative;
   width: 100%;
-  height: 99.73%;
+  height: 100%;
 }
 
 .background-image {
@@ -63,175 +67,147 @@ hr {
   height: 100%;
   object-fit: cover;
   opacity: 95%;
-  filter: blur(px); /* Add blur effect to the images */
   border: 3px solid rgb(0, 0, 0);
-  
 }
 
-  .text-overlay {
-    position: absolute;
-    top: 20px; /* Distance from the top */
-    left: 20px; /* Distance from the left */
-    color: rgb(255, 94, 0); /* Orange text */
-    font-size: 3.3rem; /* Adjust font size as needed */
-    text-align: left; /* Left-aligned text */
-    padding: 50px; /* Padding around the text */
-    font-family: Arial, Helvetica, sans-serif;
-  }
+.text-overlay {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  color: rgb(255, 94, 0);
+  font-size: 3rem;
+  text-align: left;
+  padding: 10px;
+  max-width: 90%; /* Ensure text stays within the image container */
+  box-sizing: border-box;
+}
 
-/* Mobile layout: move right section on top */
+/* Mobile layout: move right section on top and scroll together */
 @media (max-width: 768px) {
   .container {
-    flex-direction: column; /* Stack the sections vertically */
+    flex-direction: column;
+    height: auto; /* Allow the container to expand with content */
   }
 
   .right {
-    order: 1; /* Move the right side (images) to the top */
-    flex: none; /* Reset flex */
-    height: 50vh; /* Adjust the height for mobile view */
+    order: 1;
+    flex: none;
+    height: auto; /* Allow the image section to take its natural height */
   }
 
   .left {
-    order: 2; /* Move the left side (content) to the bottom */
-    flex: none; /* Reset flex */
+    order: 2;
+    flex: none;
     height: auto; /* Let the content take its natural height */
   }
 
-  .text-overlay {
-    font-size: 1rem; /* Adjust font size for smaller screens */
-    padding: 10px; /* Reduce padding for mobile view */
-    width: 90%; /* Make sure it fits within the screen */
-    left: 5%; /* Center horizontally by giving space on the left */
-    right: 5%; /* Add space on the right as well */
-    box-sizing: border-box; /* Include padding in width */
+  .image-container {
+    height: auto; /* Allow the image container to grow with content */
   }
 
   .background-image {
-    height: 100%;
+    height: auto;
+    object-fit: contain; /* Ensure the image is fully visible and doesn't crop */
+  }
+
+  .text-overlay {
+    font-size: 1rem;
+    padding: 10px;
+    width: 90%;
+    left: 5%;
+    right: 5%;
+    box-sizing: border-box;
   }
 
   .page-title {
-    font-size: 1.5rem; /* Adjust title size for mobile */
+    font-size: 1.5rem;
   }
 
   h2 {
-    font-size: 2rem; /* Smaller headings on mobile */
+    font-size: 2rem;
   }
 
   h3 {
-    font-size: 1.2rem; /* Adjust heading size */
+    font-size: 1.2rem;
   }
 
   p {
-    font-size: 0.9rem; /* Adjust paragraph size */
+    font-size: 0.9rem;
   }
 }
-
-/* Default desktop styles will apply above 1024px */
 
 /* Mid-size screens: Tablets, iPads, and MacBooks */
 @media (min-width: 768px) and (max-width: 1024px) {
   .container {
-    flex-direction: column; /* Stack the sections vertically */
-  }
-
-  .right {
-    order: 1; /* Move the right side (images) to the top */
-    flex: none; /* Reset flex */
-    height: 50vh; /* Adjust the height */
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
   }
 
   .left {
-    order: 2; /* Move the left side (content) to the bottom */
-    flex: none; /* Reset flex */
-    height: auto; /* Let the content take its natural height */
-    padding: 15px; /* Adjust padding for mid-size screens */
+    flex: 5;
+    padding: 20px;
+    background-color: #000000;
+    color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-y: auto;
   }
 
-  .text-overlay {
-    font-size: 2.5rem; /* Adjust font size for mid-size screens */
-    padding: 15px; /* Reduce padding to prevent text overflow */
-    width: 90%; /* Ensure it fits within the screen */
-    left: 5%; /* Center horizontally */
-    right: 5%; /* Space on the right */
-    box-sizing: border-box; /* Include padding in width */
+  .right {
+    flex: 5;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .image-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
   }
 
   .background-image {
+    width: 100%;
     height: 100%;
-    object-fit: cover; /* Ensure the image covers the container */
+    object-fit: cover;
+    opacity: 95%;
+    border: 3px solid rgb(0, 0, 0);
   }
 
-  .page-title {
-    font-size: 1.75rem; /* Adjust title size for mid-screens */
-  }
-
-  h2 {
-    font-size: 2.5rem; /* Adjust heading size */
-  }
-
-  h3 {
-    font-size: 1.3rem; /* Adjust heading size */
-  }
-
-  p {
-    font-size: 1rem; /* Adjust paragraph size */
+  .text-overlay {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: rgb(255, 94, 0);
+    font-size: 1.5rem;
+    text-align: left;
+    padding: 10px;
+    max-width: 90%;
+    box-sizing: border-box;
   }
 
   hr {
-    margin: 15px 0; /* Adjust margins for better spacing */
+    border: 2.5px solid rgb(128, 128, 128);
+    margin: 15px 50px 10px 0px;
   }
 }
 
-/* Mobile layout: Phones and smaller screens below 768px */
-@media (max-width: 768px) {
+/* Adjustments for 1440x900 */
+@media (min-width: 1024px) and (max-width: 1440px) {
   .container {
-    flex-direction: column; /* Stack the sections vertically */
+    height: 100vh;
+    overflow: hidden;
   }
 
   .right {
-    order: 1; /* Move the right side (images) to the top */
-    flex: none; /* Reset flex */
-    height: 50vh; /* Adjust the height */
-  }
-
-  .left {
-    order: 2; /* Move the left side (content) to the bottom */
-    flex: none; /* Reset flex */
-    height: auto; /* Let the content take its natural height */
-    padding: 10px; /* Adjust padding for smaller screens */
+    overflow: hidden;
   }
 
   .text-overlay {
-    font-size: 2rem; /* Adjust font size for smaller screens */
-    padding: 10px; /* Reduce padding for mobile view */
-    width: 90%; /* Ensure it fits within the screen */
-    left: 5%; /* Center horizontally */
-    right: 5%; /* Space on the right */
-    box-sizing: border-box; /* Include padding in width */
+    max-width: 85%; /* Ensure overlay text stays within image container */
   }
 
   .background-image {
-    height: 100%;
-  }
-
-  .page-title {
-    font-size: 1.5rem; /* Adjust title size for mobile */
-  }
-
-  h2 {
-    font-size: 2rem; /* Smaller headings on mobile */
-  }
-
-  h3 {
-    font-size: 1.2rem; /* Adjust heading size */
-  }
-
-  p {
-    font-size: 0.9rem; /* Adjust paragraph size */
-  }
-
-  hr {
-    margin: 10px 0; /* Adjust margin */
+    object-fit: contain; /* Make sure the image fits well without cropping */
   }
 }
