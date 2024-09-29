@@ -193,21 +193,58 @@ hr {
 }
 
 /* Adjustments for 1440x900 */
-@media (min-width: 1024px) and (max-width: 1440px) {
+@media (min-width: 900px) and (max-width: 1440px) {
   .container {
+    display: flex;
     height: 100vh;
     overflow: hidden;
   }
 
+  .left {
+    flex: 5;
+    padding: 20px;
+    background-color: #000000;
+    color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-y: auto;
+  }
+
   .right {
+    flex: 5;
+    position: relative;
     overflow: hidden;
   }
 
-  .text-overlay {
-    max-width: 85%; /* Ensure overlay text stays within image container */
+  .image-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
   }
 
   .background-image {
-    object-fit: contain; /* Make sure the image fits well without cropping */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 95%;
+    border: 3px solid rgb(0, 0, 0);
+  }
+
+  .text-overlay {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: rgb(255, 94, 0);
+    font-size: 1.5rem;
+    text-align: left;
+    padding: 10px;
+    max-width: 90%;
+    box-sizing: border-box;
+  }
+
+  hr {
+    border: 2.5px solid rgb(128, 128, 128);
+    margin: 15px 50px 10px 0px;
   }
 }
+
