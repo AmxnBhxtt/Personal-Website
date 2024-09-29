@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./App.css";
 
 const images = [
-  "img1.jpg", // Replace these with the actual paths of your images
+  "img1.jpg", // Replace these with the actual paths of your imaes
   "img2.jpg",
   "img3.jpg",
   "img4.jpg",
