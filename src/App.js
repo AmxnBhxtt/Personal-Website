@@ -39,13 +39,13 @@ const App = () => {
         </div>
         
         <div className="projects">
-        <h3><a href="Resume.pdf" target="_blank" rel="noopener noreferrer">TECHNOLOGY INTERN ↗️</a></h3>
+        <h3><a href="https://depauledu-my.sharepoint.com/:b:/g/personal/abhatt5_depaul_edu/ESLN07wfDetGvrVr6C2dyicBu7YJ9ZyqkeGuT922uB2T9A?e=vDMlaW" target="_blank" rel="noopener noreferrer">TECHNOLOGY INTERN ↗️</a></h3>
         <p>Kashiv BioSciences LLC.</p>
           <hr />
-          <h3><a href="/Resume.pdf" target="Resume.pdf" rel="noopener noreferrer">BACKEND SYSTEMS ENGINEERING INTERN ↗️</a></h3>
+          <h3><a href="https://depauledu-my.sharepoint.com/:b:/g/personal/abhatt5_depaul_edu/ESLN07wfDetGvrVr6C2dyicBu7YJ9ZyqkeGuT922uB2T9A?e=vDMlaW" target="Resume.pdf" rel="noopener noreferrer">BACKEND SYSTEMS ENGINEERING INTERN ↗️</a></h3>
           <p>IAMI Authentication LLC.</p>
           <hr />
-          <h3><a href="project1.pdf" target="_blank" rel="noopener noreferrer">BIKE SHARING DATA ANALYSIS MODEL AND THESIS ↗️</a></h3>
+          <h3><a href="https://github.com/AmxnBhxtt/Seoul-Bike-Sharing-Data-Analysis" target="_blank" rel="noopener noreferrer">BIKE SHARING DATA ANALYSIS MODEL AND THESIS ↗️</a></h3>
           <p>Data Analysis · Data Modeling · Statistical Data Analysis · SAS · Oracle Database System · Big Data</p>
           <hr />
           <h3><a href="https://github.com/AmxnBhxtt/Live-Language-Translation-Device" target="_blank" rel="noopener noreferrer">REAL-TIME LANGUAGE TRANSLATION DEVICE ↗️</a></h3>
@@ -60,7 +60,7 @@ const App = () => {
         </div>
         
         <div className="projects">
-          <h3><a href={"/Resume.pdf"}target="_blank" rel="noopener noreferrer">RESUME ↗️</a></h3>
+          <h3><a href={"https://depauledu-my.sharepoint.com/:b:/g/personal/abhatt5_depaul_edu/ESLN07wfDetGvrVr6C2dyicBu7YJ9ZyqkeGuT922uB2T9A?e=vDMlaW"}target="_blank" rel="noopener noreferrer">RESUME ↗️</a></h3>
           <p>Yes, it will pass though an ATS System!</p>
           <hr />
           <h3><a href="https://github.com/AmxnBhxtt" target="_blank" rel="noopener noreferrer">GITHUB ↗️</a></h3>
