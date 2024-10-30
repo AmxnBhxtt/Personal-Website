@@ -134,9 +134,9 @@ const App = () => {
         <Route
           path="/blog"
           element={
-            <div style={{ color: "white", backgroundColor: "#333", padding: "20px", minHeight: "100vh" }}>
-            <h1>Blog 1!</h1>
-            <p>"For Project 1, initially, we had good teamwork that kept improving for more communication and timing. In the second week, 
+            <div style={{color: "white", backgroundColor: "#333", padding: "40px", minHeight: "100vh" }}>
+            <h1 style={{ fontSize: "2.5em" }}>Blog 1!</h1>
+            <p style={{ fontSize: "1.5em" }}>For Project 1, initially, we had good teamwork that kept improving for more communication and timing. In the second week, 
               we had defined roles, and supporting each other in those roles went well. One point during the week, I noticed a few members were 
               well behind on the GitHub pushes, and I mentioned to them doing a push for them, even if their work was unfinished. Daily communication 
               started to be routine, and we completed our tasks a full day in advance—greatly improved from the first week.
@@ -146,10 +146,11 @@ the time and really polish everything well. Those team members who were familiar
  initiated a rule that no one was allowed to push to main without permission to avoid any conflicts.
 Our meetings had been a time to review project requirements and learn from past mistakes. Such as improving our wiki pages, going over what went wrong 
 with part A put us in good shape to make improvements in part B. Ultimately, a few issues with test merges held us up by a day, but we learned starting projects 
-earlier allows us to share updates sooner, rather than having delays related to problems like this."</p>
+earlier allows us to share updates sooner, rather than having delays related to problems like this.</p>
           
-            <h1>Blog 2!</h1>
-            <p>"With Project 2, the kick-off went smoother compared to Project 1, because it had already overcome the hurdles of setting up communication, laying foundational work such as setting up the GitHub wiki, and fleshing out individual roles. The meeting coordination went far more effectively, and full attendance was almost always the case, making aligning our work easier.
+    
+            <h1 style={{ fontSize: "2.5em" }}>Blog 2!</h1>
+            <p style={{ fontSize: "1.5em" }}>With Project 2, the kick-off went smoother compared to Project 1, because it had already overcome the hurdles of setting up communication, laying foundational work such as setting up the GitHub wiki, and fleshing out individual roles. The meeting coordination went far more effectively, and full attendance was almost always the case, making aligning our work easier.
 
 Part A was mostly straightforward; we kept the number of people making the spec comparatively small, to ensure it was consistent, and allowed the other roles to get an early start with their work. The key challenge in spec development was to provide enough detail so as to meet what we wanted, while leaving room for the implementation team to devise their own solutions in case anything came up. What we did was an approach: let team members not working on the spec review this as a small team, using their fresh perspectives to judge whether any information was missing, and if they thought they could implement it based purely on the spec.
 
