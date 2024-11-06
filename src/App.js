@@ -157,6 +157,13 @@ Part A was mostly straightforward; we kept the number of people making the spec 
 Part B was a lot harder. We delegated design spec methods out pretty evenly across all team members, and each worked in separate branches. Unfortunately, there were lots of conflicts to meld everyone's branches together when the time came, since certain methods couldn't be tested effectively until others were complete.
 
 Some were only merged for us to find out later that they could not compile, thus tracing it back to a branch. The other big blocker is that many of the test cases prepared before the methods were implemented didn't check correctly what a valid output should be; for example, a function returning -1 versus null. Besides the implementation problems, there were also a couple of inconsistencies and vague parts in the design document. We did, for example, handle fixed-size arrays ourselves since it wasn't specified in the design, but later the other team requested we change it after we were done..</p>
+          
+              <h1 style={{ fontSize: "2.5em" }}>Blog 3!</h1>
+              <p style={{ fontSize: "1.5em" }}>
+                Project 3 was both challenging and straightforward. Part A also brought about an unexpected problem of making the documentation. We had thought it would be easy, but the instructions were somewhat unclear about what we exactly had to include, leading to several trial-and-error attempts before getting it right. Thankfully, this is where teamwork played an important role in helping us move forward. I worked as a documentation designer with two other teammates, and we decided to focus on clarifying the requirements. We confirmed with other team members, brainstormed ideas, and pieced together everyone's thoughts to shape the documentation in a way that made sense. This process of clarification gradually helped us assemble what was needed in a manner that worked.
+
+                Part B, however, brought with it a different kind of challenge. There were quite a lot of miscommunications, especially regarding assigning different group responsibilities and knowing who was responsible for what. On the positive side, the small team size worked to our advantage; with only three developers, the work could be easily distributed. We divided the code into parts for debugging, making the process smoother and avoiding stepping on each other's toes. Although debugging itself wasn't particularly difficult, it posed challenges for some other teams, who weren't clear about which part of the codebase to focus on. This teamwork ultimately allowed us to identify and resolve bugs and to guide teammates who encountered difficulties in their tasks.
+              </p>
           </div>
           }
         />
