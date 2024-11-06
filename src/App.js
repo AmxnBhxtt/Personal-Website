@@ -156,7 +156,7 @@ Part A was mostly straightforward; we kept the number of people making the spec 
 
 Part B was a lot harder. We delegated design spec methods out pretty evenly across all team members, and each worked in separate branches. Unfortunately, there were lots of conflicts to meld everyone's branches together when the time came, since certain methods couldn't be tested effectively until others were complete.
 
-Some were only merged for us to find out later that they could not compile, thus tracing it back to a branch. The other big blocker is that many of the test cases prepared before the methods were implemented didn't check correctly what a valid output should be; for example, a function returning -1 versus null. Besides the implementation problems, there were also a couple of inconsistencies and vague parts in the design document. We did, for example, handle fixed-size arrays ourselves since it wasn't specified in the design, but later the other team requested we change it after we were done.</p>
+Some were only merged for us to find out later that they could not compile, thus tracing it back to a branch. The other big blocker is that many of the test cases prepared before the methods were implemented didn't check correctly what a valid output should be; for example, a function returning -1 versus null. Besides the implementation problems, there were also a couple of inconsistencies and vague parts in the design document. We did, for example, handle fixed-size arrays ourselves since it wasn't specified in the design, but later the other team requested we change it after we were done..</p>
           </div>
           }
         />
